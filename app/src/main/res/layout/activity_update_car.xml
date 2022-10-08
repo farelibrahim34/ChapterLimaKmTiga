@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UpdateCarActivity">
+    <EditText
+        android:id="@+id/addMobil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="nama mobil"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="category"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addMobil"
+        app:layout_constraintStart_toStartOf="@+id/addMobil"
+        app:layout_constraintTop_toBottomOf="@+id/addMobil" />
+
+    <EditText
+        android:id="@+id/addStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="status"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addCategory"
+        app:layout_constraintStart_toStartOf="@+id/addCategory"
+        app:layout_constraintTop_toBottomOf="@+id/addCategory" />
+
+    <EditText
+        android:id="@+id/addPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addStatus"
+        app:layout_constraintStart_toStartOf="@+id/addStatus"
+        app:layout_constraintTop_toBottomOf="@+id/addStatus" />
+
+    <EditText
+        android:id="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="image"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addPrice"
+        app:layout_constraintStart_toStartOf="@+id/addPrice"
+        app:layout_constraintTop_toBottomOf="@+id/addPrice" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
